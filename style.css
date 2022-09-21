@@ -2,6 +2,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  width: fit-content;
 }
 
 h2 {
@@ -153,8 +154,21 @@ footer p {
     padding-right: 20px;
   }
 
-  form input, form select {
-    width:85%;
+  form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form div {
+    flex-direction: column;
+  }
+
+
+  form select, form input {
+    margin-bottom: 0px;
+    width: auto;
   }
 
   form button {
@@ -170,23 +184,5 @@ footer p {
   .group {
     flex-direction: row;
     align-items: center;
-  }
-}
-
-@media all and (min-width: 1000px) {
-  form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  form div {
-    flex-direction: column;
-  }
-
-
-  form select, form input {
-    margin-bottom: 0px;
-    width: 180px;
   }
 }
