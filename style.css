@@ -61,12 +61,12 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 50px;
   color: #fff;
 }
 
 nav {
-  padding-bottom: 5px;
+  /* padding-bottom: 5px; */
   display: flex;
   justify-content: center;
 }
@@ -113,7 +113,7 @@ form div {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 132px;
 }
 
 form button {
@@ -153,6 +153,27 @@ footer p {
     padding-right: 20px;
   }
 
+  form input, form select {
+    width:85%;
+  }
+
+  form button {
+    flex: 1;
+  }
+
+  .logo {
+    margin: 15px 0 15px 20px;
+    padding-top: 0;
+    font-size: 42px;
+  }
+
+  .group {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media all and (min-width: 1000px) {
   form {
     display: flex;
     align-items: center;
@@ -161,26 +182,11 @@ footer p {
 
   form div {
     flex-direction: column;
-    align-items: space-evenly;
-    justify-content: space-evenly;
   }
 
-  
+
   form select, form input {
     margin-bottom: 0px;
-  }
-
-  form button {
-    flex: 1;
-  }
-
-  .logo {
-    margin: 15px 20px;
-    font-size: 42px;
-  }
-
-  .group {
-    flex-direction: row;
-    align-items: center;
+    width: 180px;
   }
 }
